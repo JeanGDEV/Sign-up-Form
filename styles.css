@@ -2,3 +2,30 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: Oswald;
+}
+
+/** BACKGROUND IMAGE SECTION **/
+
+.bg-img-cont {
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(images/bg-img-plant.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 30vw;
+    display: flex;
+}
+
+
+h1 {
+    font-family: StayWithMe;
+    font-size: 3rem;
+    color: white;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    text-align: center;
+}
