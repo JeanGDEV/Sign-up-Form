@@ -2,7 +2,8 @@
     --background-color: rgb(245, 104, 79);
     --background-color-form: white;
     --text-color-form: black;
-    --button-color: cyan;
+    --button-color: rgb(73, 245, 73);
+    --soft-color-white: #FBFAF5; 
 }
 
 * {
@@ -15,6 +16,7 @@ body {
     display: flex;
     font-family: Oswald;
     background: var(--background-color);
+    color: white;
 }
 
 /** BACKGROUND IMAGE SECTION **/
@@ -42,4 +44,54 @@ h1 {
 
 .form-section {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+
+.container-form {
+    background-color: var(--background-color-form);
+    display: flex;
+    flex-wrap: wrap;
+    width: min(80%, 600px);
+    color: var(--text-color-form);
+}
+
+.container-form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.create-acc-button {
+    padding: 6px 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-family: Oswald;
+    background: var(--button-color);
+    transition: color 0.2s;
+}
+
+.create-acc-button:hover {
+    color: var(--soft-color-white);
+}
+
+a {
+    color: var(--button-color);
+    text-decoration: none;
+    transition: text-shadow 0.3s;
+}
+
+a:hover {
+    --button-color: rgb(45, 250, 45);
+    text-shadow: 0 0 2px var(--button-color);
 }
