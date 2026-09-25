@@ -1,3 +1,10 @@
+:root {
+    --background-color: rgb(245, 104, 79);
+    --background-color-form: white;
+    --text-color-form: black;
+    --button-color: cyan;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +14,7 @@ body {
     height: 100vh;
     display: flex;
     font-family: Oswald;
-    background: #222;
+    background: var(--background-color);
 }
 
 /** BACKGROUND IMAGE SECTION **/
@@ -36,4 +43,3 @@ h1 {
 .form-section {
     margin: auto;
 }
-
