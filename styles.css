@@ -128,7 +128,7 @@ h2 {
 /** VALIDATION **/
 
 .container-form-item > input:user-valid {
-    border-color: green;
+    border-color: rgb(4, 247, 4);
 }
 
 .container-form-item > input:user-invalid {
