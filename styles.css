@@ -3,7 +3,8 @@
     --background-color-form: white;
     --text-color-form: black;
     --button-color: rgb(73, 245, 73);
-    --soft-color-white: #FBFAF5; 
+    --soft-color-white: #FBFAF5;
+    --font-size-title-form: clamp(1.6rem, 4.2vw, 3.4rem); 
 }
 
 * {
@@ -43,30 +44,54 @@ h1 {
 /** FORM SECTION **/
 
 .form-section {
-    margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
 
 }
 
+.container-form-item > input {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.item-flex-row {
+    display: flex;
+    gap: 50px;
+    margin: 20px 0;
+}
+
 form {
-    margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 
 .container-form {
+    border-radius: 7px;
     background-color: var(--background-color-form);
-    display: flex;
-    flex-wrap: wrap;
-    width: min(80%, 600px);
     color: var(--text-color-form);
+    padding: 10px 20px;
 }
 
 .container-form-item {
     display: flex;
     flex-direction: column;
     align-items: start;
+
+}
+
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .create-acc-button {
@@ -94,4 +119,17 @@ a {
 a:hover {
     --button-color: rgb(45, 250, 45);
     text-shadow: 0 0 2px var(--button-color);
+}
+h2 {
+    font-size: var(--font-size-title-form);
+}
+
+/** VALIDATION **/
+
+.container-form-item > input:user-valid {
+    border-color: green;
+}
+
+.container-form-item > input:user-invalid {
+    border-color: red;
 }

@@ -16,32 +16,38 @@
         <h2>Compress it, Extract it!</h2>
         <form action="#" method="post">
             <div class="container-form">
-                <div class="container-form-item">
-                    <label for="user-first-name">First Name</label>
-                    <input type="text" id="user-first-name" name="user-first-name" required>
+                <div class="item-flex-row">
+                    <div class="container-form-item">
+                        <label for="user-first-name">First Name</label>
+                        <input type="text" id="user-first-name" name="user-first-name" required>
+                    </div>
+                    <div class="container-form-item">
+                        <label for="user-last-name">Last Name</label>
+                        <input type="text" id="user-last-name" name="user-last-name" required>
+                    </div>
                 </div>
-                <div class="container-form-item">
-                    <label for="user-last-name">Last Name</label>
-                    <input type="text" id="user-last-name" name="user-last-name" required>
+                <div class="item-flex-row">
+                    <div class="container-form-item">
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="user-email" required>
+                    </div>
+                    <div class="container-form-item">
+                        <label for="user-phone">Phone</label>
+                        <input type="tel" id="user-phone" name="user-phone" required>
+                    </div>
                 </div>
-                <div class="container-form-item">
-                    <label for="user-email">Email</label>
-                    <input type="email" id="user-email" name="user-email" required>
-                </div>
-                <div class="container-form-item">
-                    <label for="user-phone">Phone</label>
-                    <input type="tel" id="user-phone" name="user-phone" required>
-                </div>
-                <div class="container-form-item">
-                    <label for="user-password">Password</label>
-                    <input type="password" id="user-password" name="user-password" required>
-                </div>
-                <div class="container-form-item">
-                    <label for="user-confirm-password">Confirm Password</label>
-                    <input type="password" id="user-confirm-password" name="user-confirm-password" required>
+                <div class="item-flex-row">
+                    <div class="container-form-item">
+                        <label for="user-password">Password</label>
+                        <input type="password" id="user-password" name="user-password" required>
+                    </div>
+                    <div class="container-form-item">
+                        <label for="user-confirm-password">Confirm Password</label>
+                        <input type="password" id="user-confirm-password" name="user-confirm-password" required>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div class="form-bottom">
                 <button class="create-acc-button" type="submit">Create Account</button>
                 <p>Already have an account? <a href="#">Log In</a></p>
             </div>
