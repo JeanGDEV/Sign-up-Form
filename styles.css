@@ -3,6 +3,7 @@
     --background-color-form: white;
     --text-color-form: black;
     --button-color: rgb(73, 245, 73);
+    --link-color-side: white;
     --soft-color-white: #FBFAF5;
     --font-size-title-form: clamp(1.6rem, 4.2vw, 3.4rem); 
 }
@@ -30,7 +31,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
 
+.item-position-bottom {
+    font-size: 0.8rem;
+    color: var(--link-color-side);
+   position: absolute;
+   bottom: 8px;
+}
+
+.item-position-bottom > a {
+    text-decoration: underline;
+    color: var(--link-color-side);
 }
 
 .container-img-elements {
