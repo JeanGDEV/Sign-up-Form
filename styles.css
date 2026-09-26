@@ -85,13 +85,14 @@ form {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 5px;
 
 }
 
 .form-bottom {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .create-acc-button {
