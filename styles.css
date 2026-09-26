@@ -28,16 +28,30 @@ body {
     background-size: cover;
     width: 30vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.container-img-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    padding: 10px;
+}
+
+img {
+    width: 40px;
+}
 
 h1 {
     font-family: StayWithMe;
     font-size: 3rem;
     color: white;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.568);
-    width: 100%;
+
     text-align: center;
 }
 
